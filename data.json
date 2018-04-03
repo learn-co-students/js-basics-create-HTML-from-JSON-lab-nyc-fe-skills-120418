@@ -1,0 +1,43 @@
+{
+  "title": "Titanic",
+  "director": "James Cameron",
+  "genre": "Drama",
+  "film-rating": "PG-13",
+  "poster":
+    "https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg",
+  "viewer-rating": 7.8,
+  "description":
+    "A blooming, epic romance is tested when an unexpected event occurs. Jack and Rose are forced to work together and fight Billy Zane.",
+  "cast": [
+    {
+      "role": "Jack",
+      "actor": "Leonardo DiCaprio"
+    },
+    {
+      "role": "Rose",
+      "actor": "Kate Winslett"
+    },
+    {
+      "role": "Cal",
+      "actor": "Billy Zane"
+    },
+    {
+      "role": "Cold Water",
+      "actor": "itself"
+    }
+  ],
+  "reviews": [
+    {
+      "username": "Brock Lovett",
+      "review": "great film. Didn't think the ship would sink, but it did!"
+    },
+    {
+      "username": "Thomas Andrews",
+      "review": "loved it"
+    },
+    {
+      "username": "Ruth Dewitt Bukater",
+      "review": "Rose could have shared the space on that door."
+    }
+  ]
+}

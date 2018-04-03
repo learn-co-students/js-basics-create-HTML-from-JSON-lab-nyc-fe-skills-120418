@@ -1,0 +1,28 @@
+html {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 5%;
+  height: auto;
+  background-color: grey;
+  font-family: serif;
+  text-align: center;
+}
+
+header {
+  font-size: 150%;
+}
+
+#title {
+  font-size: 250%;
+}
+
+#listSection {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+}

@@ -1,6 +1,9 @@
 tags:
-  - bundler
-  - introduction
+  - JavaScript
+  - DOM Manipulation
+  - JSON
+  - HTML
 languages:
-  - ruby
-resources: 2
+  - JavaScript
+  - HTML
+resources: 1
