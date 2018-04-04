@@ -1,47 +1,22 @@
-const jsd = require("jsdom")
-console.log(jsd);
-const {jsdom} = jsd;
+describe("index.html", function() {
+    it("displays the correct JSON data ", () => {
+      expect(document.getElementById("title").innerHTML).toEqual("Titanic")
+      expect(document.getElementById("director").innerHTML).toEqual("James Cameron")
+      expect(document.getElementById("genre").innerHTML).toEqual("Drama")
+      expect(document.getElementById("filmRating").innerHTML).toEqual("PG-13")
+    });
 
+    it("displays the correct image ", () => {
+      expect(document.getElementById("poster").src).toEqual("https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg")
+    });
 
-fs = require("fs");
-path = require("path");
-const html = fs.readFileSync(
-  path.resolve(__dirname, "..", "index.html"),
-  "utf-8"
-);
+    it("creates separate elements for each cast member ", () => {
+      console.log(document.getElementById("cast").childNodes)
+      expect(document.getElementById("cast").childNodes.length).toEqual(4)
+    });
 
-d = new jsdom(html, {runScripts: "dangerously", resources: "usable"})
-console.log(d.window);
-// console.log(document);
-// console.log(window);
-// $ = require('jquery')
-// require('../index.js')
-// handleJSON
-// describe("tests", function() {
-//     before(() => {
-//
-//     })
-//     it("has inputs and an output", () => {
-//
-//         console.log(handleJSON);
-//         console.log("test ran");
-//         // console.log(handleJSON);
-//         // console.log("in test: ", document.getElementById("title").innerHTML)
-//
-//       });
-// })
-//   console.log(dom)
-//
-
-//
-//
-//
-// })
-// // chai = require("chai");
-// expect = require("chai").expect;
-// assert = require("chai").assert;
-// fs = require("fs");
-// jsdom = require("jsdom");
-// path = require("path");
-// should = chai.should();
-//
+    it("creates separate elements for each review ", () => {
+      console.log(document.getElementById("reviews").childNodes)
+      expect(document.getElementById("reviews").childNodes.length).toEqual(3)
+    });
+})

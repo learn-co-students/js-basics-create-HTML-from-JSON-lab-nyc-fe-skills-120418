@@ -1,5 +1,3 @@
-$( document ).ready(handleJSON);
-
 function handleJSON() {
     let json = JSON.parse(jsonData)
     $('#title').text(json.title)
@@ -17,7 +15,6 @@ function handleJSON() {
     })
 }
 
-
 //this JSON data should not be altered during the lab
 const jsonData = `{
   "title": "Titanic",
@@ -28,7 +25,7 @@ const jsonData = `{
     "https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg",
   "audienceScore": 7.8,
   "description":
-    "A blooming, epic romance is tested when an unexpected event occurs. Jack and Rose are forced to work together and escape from Billy Zane.",
+    "A blooming romance is tested when an unexpected event occurs. Jack and Rose are forced to work together and escape from Billy Zane.",
   "cast": [
     {
       "role": "Jack",
@@ -62,3 +59,7 @@ const jsonData = `{
     }
   ]
 }`
+
+window.addEventListener("load", () => {
+  handleJSON()
+});

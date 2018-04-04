@@ -1,12 +1,12 @@
 html {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: white;
   height: 100vh;
   width: 100vw;
 }
 
-body {
+#moviePage {
   margin: 5%;
   height: auto;
   background-color: #DDD;
@@ -20,7 +20,7 @@ header {
 }
 
 img {
-  width: 100%;
+  width: 50%;
 }
 
 main {
@@ -56,7 +56,7 @@ main {
   flex-flow: column;
   align-items: stretch;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 #cast * {
@@ -72,7 +72,13 @@ main {
   justify-content: space-between;
 }
 
-#reviews * {
-  display: flex;
-  justify-content: space-between;
+#mocha {
+  margin: 5%;
+  padding: 1em;
+  height: auto;
+  background-color: #DDD;
+
+}
+#mocha ul {
+  list-style-type: none;
 }
