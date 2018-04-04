@@ -9,13 +9,23 @@ html {
 body {
   margin: 5%;
   height: auto;
-  background-color: grey;
+  background-color: #DDD;
   font-family: serif;
   text-align: center;
 }
 
 header {
   font-size: 150%;
+  text-shadow: 1px 0px #333;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  margin: 5px;
+  padding: 1em;
 }
 
 #title {
@@ -25,4 +35,29 @@ header {
 #listSection {
   display: grid;
   grid-template: auto / 1fr 1fr;
+  min-height: 200px;
+}
+
+#listSection * {
+  padding: 1em;
+
+}
+
+#cast {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#cast * {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reviews {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: space-between;
 }

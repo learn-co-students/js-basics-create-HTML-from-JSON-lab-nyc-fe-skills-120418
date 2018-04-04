@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-04-04T14:22:58.354Z",
+    "end": "2018-04-04T14:22:58.997Z",
+    "duration": 643
+  },
+  "tests": [
+    {
+      "title": "does not have JSON data on initial load",
+      "fullTitle": "index.html does not have JSON data on initial load",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "does not have JSON data on initial load",
+      "fullTitle": "index.html does not have JSON data on initial load",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
