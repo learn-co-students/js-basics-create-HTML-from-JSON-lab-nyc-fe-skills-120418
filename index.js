@@ -1,18 +1,8 @@
 function handleJSON() {
-    let json = JSON.parse(jsonData)
-    $('#title').text(json.title)
-    $('#director').text(json.director)
-    $('#genre').text(json.genre)
-    $('#filmRating').text(json.filmRating)
-    $('#poster').attr('src', json.poster)
-    $('#description').text(json.description)
-    $('#audienceScore').text(json.audienceScore)
-    json.cast.forEach(star => {
-      $('#cast').append(`<div><span>${star.actor}</span><span>${star.role}</span></div>`)
-    })
-    json.reviews.forEach(review => {
-      $('#reviews').append(`<div><div>${review.content}</div><div>-${review.username}</div></div>`)
-    })
+
+  //All of your JavaScript should go within this function
+  //handleJSON() is called when the window loads, so refresh your page to check tests
+
 }
 
 //this JSON data should not be altered during the lab
