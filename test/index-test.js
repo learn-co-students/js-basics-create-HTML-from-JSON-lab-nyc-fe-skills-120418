@@ -1,25 +1,47 @@
-const chai = require("chai");
-const expect = require("chai").expect;
-const assert = require("chai").assert;
-const fs = require("fs");
-const jsdom = require("mocha-jsdom");
-const path = require("path");
+const jsd = require("jsdom")
+console.log(jsd);
+const {jsdom} = jsd;
 
-const should = chai.should();
 
+fs = require("fs");
+path = require("path");
 const html = fs.readFileSync(
   path.resolve(__dirname, "..", "index.html"),
   "utf-8"
 );
 
-const script = fs.readFileSync(path.resolve(__dirname, "..", "index.js"));
-jsdom({ html, script });
+d = new jsdom(html, {runScripts: "dangerously", resources: "usable"})
+console.log(d.window);
+// console.log(document);
+// console.log(window);
+// $ = require('jquery')
+// require('../index.js')
+// handleJSON
+// describe("tests", function() {
+//     before(() => {
+//
+//     })
+//     it("has inputs and an output", () => {
+//
+//         console.log(handleJSON);
+//         console.log("test ran");
+//         // console.log(handleJSON);
+//         // console.log("in test: ", document.getElementById("title").innerHTML)
+//
+//       });
+// })
+//   console.log(dom)
+//
 
-before
-describe("index.html", () => {
-  it("does not have JSON data on initial load", () => {
-    assert.include(document.querySelector("#title").innerHTML, "Title");
-    assert.include(document.querySelector("#director").innerHTML, "Director");
-    assert.include(document.querySelector("#genre").innerHTML, "Genre");
-  });
-});
+//
+//
+//
+// })
+// // chai = require("chai");
+// expect = require("chai").expect;
+// assert = require("chai").assert;
+// fs = require("fs");
+// jsdom = require("jsdom");
+// path = require("path");
+// should = chai.should();
+//

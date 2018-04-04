@@ -8,7 +8,7 @@ function handleJSON() {
     $('#filmRating').text(json.filmRating)
     $('#poster').attr('src', json.poster)
     $('#description').text(json.description)
-    $('#viewerRating').text(json.viewerRating)
+    $('#audienceScore').text(json.audienceScore)
     json.cast.forEach(star => {
       $('#cast').append(`<div><span>${star.actor}</span><span>${star.role}</span></div>`)
     })
@@ -17,6 +17,8 @@ function handleJSON() {
     })
 }
 
+
+//this JSON data should not be altered during the lab
 const jsonData = `{
   "title": "Titanic",
   "director": "James Cameron",
@@ -24,7 +26,7 @@ const jsonData = `{
   "filmRating": "PG-13",
   "poster":
     "https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg",
-  "viewerRating": 7.8,
+  "audienceScore": 7.8,
   "description":
     "A blooming, epic romance is tested when an unexpected event occurs. Jack and Rose are forced to work together and escape from Billy Zane.",
   "cast": [

@@ -1,29 +1,31 @@
 {
   "name": "js-basics-create-html-from-json-lab",
   "version": "1.0.0",
-  "description":
-    "A lab for practicing the creation of webpage content using JSON",
+  "description": "A lab for practicing the creation of webpage content using JSON",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab.git"
+    "url": "git+https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab.git"
   },
-  "keywords": ["HTML", "JSON", "JavaScript", "JS"],
+  "keywords": [
+    "HTML",
+    "JSON",
+    "JavaScript",
+    "JS"
+  ],
   "author": "maxwellbenton",
   "license": "ISC",
   "bugs": {
-    "url":
-      "https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab/issues"
+    "url": "https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab/issues"
   },
-  "homepage":
-    "https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab#readme",
+  "homepage": "https://github.com/learn-co-curriculum/js-basics-create-HTML-from-JSON-lab#readme",
   "dependencies": {
     "chai": "^4.1.2",
     "expect": "^1.20.2",
+    "jquery": "^3.3.1",
     "jsdom": "^9.3.0",
     "mocha": "^5.0.5",
     "mocha-jsdom": "^1.1.0",

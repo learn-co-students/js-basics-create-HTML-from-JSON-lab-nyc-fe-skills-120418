@@ -1,32 +1,16 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2018-04-04T14:22:58.354Z",
-    "end": "2018-04-04T14:22:58.997Z",
-    "duration": 643
+    "start": "2018-04-04T18:49:19.372Z",
+    "end": "2018-04-04T18:49:19.373Z",
+    "duration": 1
   },
-  "tests": [
-    {
-      "title": "does not have JSON data on initial load",
-      "fullTitle": "index.html does not have JSON data on initial load",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
+  "tests": [],
   "pending": [],
   "failures": [],
-  "passes": [
-    {
-      "title": "does not have JSON data on initial load",
-      "fullTitle": "index.html does not have JSON data on initial load",
-      "duration": 4,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+  "passes": []
 }

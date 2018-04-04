@@ -32,6 +32,14 @@ main {
   font-size: 250%;
 }
 
+#description {
+  padding: 1em;
+}
+
+#audienceScore {
+  font-size: 150%;
+}
+
 #listSection {
   display: grid;
   grid-template: auto / 1fr 1fr;
@@ -46,6 +54,7 @@ main {
 #cast {
   display: flex;
   flex-flow: column;
+  align-items: stretch;
   height: 100%;
   justify-content: space-between;
 }
@@ -58,6 +67,12 @@ main {
 #reviews {
   display: flex;
   flex-flow: column;
+  align-items: stretch;
   height: 100%;
+  justify-content: space-between;
+}
+
+#reviews * {
+  display: flex;
   justify-content: space-between;
 }
