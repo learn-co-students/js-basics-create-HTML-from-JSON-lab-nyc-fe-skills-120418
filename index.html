@@ -9,6 +9,10 @@
   <title>ERMDB</title>
 </head>
 <body>
+  <nav>
+    <button id="titanic">Titanic</button>
+    <button id="terminator">Terminator 2</button>
+  </nav>
   <div id="moviePage">
     <header>
       <div id="title">Title</div>
@@ -32,16 +36,10 @@
       </div>
     </main>
   </div>
-  
-  <!--The below HTML is for testing and does not need to be changed -->
-  <div id="mocha"></div>
-  <script src="node_modules/mocha/mocha.js"></script>
-  <script src="node_modules/expect/umd/expect.min.js"></script>
-  <script>mocha.setup('bdd');</script>
+
+  <!-- add script to load movies.json here-->
+  <script src="movies.json"></script>
+
   <script src="index.js"></script>
-  <script src="test/index-test.js"></script>
-  <script>
-    mocha.run();
-  </script>
 </body>
 </html>

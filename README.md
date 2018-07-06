@@ -1,11 +1,6 @@
 # Creating HTML With JSON Lab
 
-## Objectives
-
-* Retrieve data from a JSON file using JavaScript
-* Use DOM manipulation to add HTML content to a page
-
-## Background
+## Problem Statement
 
 Let's say you want to look up a movie on [IMDB](http://www.imdb.com/):
 you enter the title into a search bar, find the movie in the results and open
@@ -18,6 +13,17 @@ There are, however, thousands upon thousands of movies on IMDB. Creating a
 unique HTML page for each movie would be absurd! Aside from how endlessly time
 consuming it would be to create a separate webpage for every movie ever, what
 would happen if you wanted to go back and make an change to the layout?
+
+For this lab, we will be exploring the use of dynamic content, filling in a text
+on a website using JSON data. Your task is to access the provided JSON data and
+use it to populate a webpage using JavaScript and DOM manipulation.
+
+## Objectives
+
+* Retrieve data from a JSON file using JavaScript
+* Use DOM manipulation to add HTML content to a page
+
+## Retrieve Data From JSON
 
 Many modern websites are built to display dynamic, rather than static content.
 This means that a site will have some basic HTML skeleton, but the actual text
@@ -57,50 +63,63 @@ received for the recipe would look something like this:
   }`
 ```
 
-JavaScript is used to request this JSON string based on what you've clicked, and
-when it is received, it is converted into a set of nested objects and arrays,
+JavaScript is used to request this JSON string based on what you've clicked.
+When it is received, it is converted into a set of nested objects and arrays,
 which JavaScript can then read and use to fill in the content.
 
 Many of the most popular websites around are built using JSON to deliver
 their content. In fact, many of your favorite phone apps are too!
 Understanding how to take data in JSON format and convert it to HTML content is
-a critical skill in modern web development, and in this lab, we will be doing
-just that!
+a critical skill in modern web development.
 
 ## Instructions
 
-For this lab, your task is to access the provided JSON data and use it to
-populate a webpage using JavaScript and DOM manipulation. The basic HTML page
-is provided this time, as your focus should be on the handling the data.
+For this lab, we will use data for a movie as an example, creating our own
+version of an IMDB page. A movie page has an assortment of related content: a
+title, a director, a description, a list of stars, a rating, an image of the
+poster, reviews, etc... You task is to get all the JSON content into
+`index.html` using JavaScript.
 
-For this lab, we will use data for a movie as an example, creating our own version
-of an IMDB page. A movie page has an assortment of related content: a title, a
-director, a description, a list of stars, a rating, an image of the poster,
-reviews, etc... You task is to get all the JSON content into `index.html` using
-JavaScript.
+The basic HTML page is provided this time, as your focus should be on the
+handling the data.
 
-### Parsing JSON data
+#### Parsing JSON data
 
-To get started, take a look at the file `index.js`. The data we will use in
-this lab is assigned the variable `jsonData`, and there is some basic jQuery
-provided that has a `console.log` to display this data.  If you open up
-`index.html` in your browser and look at the console, we see that the data is
-output.
+To get started, take a look at the files `index.js` and `movies.json`. All of
+our data is in a separate file from our JavaScript. Since it is a local file,
+the easiest way to get access to it would be to include an HTML script tag
+within `index.html`. Add the following to the file, just before adding a`index.js`
+script tag:
 
-This data is in a string, though.  To convert this to objects and arrays, we
-need to parse this string and store the resulting object.  We can do this using
-a built in JavaScript function: `JSON.parse(<your_string>)`.  Pass in a string
-of JSON data to `JSON.parse` and it will convert it and return objects.
+```html
+<script type="text/javascript" src="movies.json"></script>
+<script type="text/javascript" src="index.js"></script>
+```
 
-Get this working and use `console.log` to confirm the results before moving on.
-The browser will recognize the logged data as an object and display it
-differently than when logging a string (in Chrome, you should be able to expand
-and collapse details).
+Now, since `movies.json` is loaded up first, we should have access to the JSON
+content as the `movies` variable.
 
-### Suggested Work Flow
+With the script tags in place, if you open up `index.html` in your browser and
+look at the console, you should see the data output.
 
-Once you've got the JSON parsed,  assign the data to `index.html` using DOM
-manipulation.  Each key/value pair in the data corresponds to an element on
-the webpage, so you'll need to write code that can append all of them.  The
-steps involved will change for different values (i.e. you will need to use
-loops for the cast and reviews data).
+#### Deliverables
+
+The way you choose to write your code is up to you. Use the provided
+`window.addEventListener` as a starting point. Use test errors as guidance on
+what to do next. Your app should do the following:
+
+* Use the HTML ids to populate content from our JSON data with the appropriate
+HTML elements
+
+* On opening, replace any filler content with all of the data related to 'Titanic'
+
+* Use the provided buttons to switch display content to 'Terminator' data and back
+
+
+#### Suggested Work Flow
+
+Assign the 'Titanic' data to `index.html` using DOM manipulation.  Each
+key/value pair in the data corresponds to an element on the webpage, so you'll
+need to write code that can append all of them.  The steps involved will change
+for different values (i.e. you will need to use loops for the cast and reviews
+data).

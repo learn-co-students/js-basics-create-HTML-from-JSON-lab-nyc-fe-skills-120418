@@ -1,22 +1,23 @@
+
 describe("index.html", function() {
     it("displays the correct JSON data ", () => {
-      expect(document.getElementById("title").innerHTML).toEqual("Titanic")
-      expect(document.getElementById("director").innerHTML).toEqual("James Cameron")
-      expect(document.getElementById("genre").innerHTML).toEqual("Drama")
-      expect(document.getElementById("filmRating").innerHTML).toEqual("PG-13")
+      expect(document.getElementById("title").innerHTML).to.equal("Titanic")
+      expect(document.getElementById("director").innerHTML).to.equal("James Cameron")
+      expect(document.getElementById("genre").innerHTML).to.equal("Drama")
+      expect(document.getElementById("filmRating").innerHTML).to.equal("PG-13")
     });
 
     it("displays the correct image ", () => {
-      expect(document.getElementById("poster").src).toEqual("https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg")
+      expect(document.getElementById("poster").src).to.equal("https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg")
     });
 
     it("creates separate elements for each cast member ", () => {
-      console.log(document.getElementById("cast").childNodes)
-      expect(document.getElementById("cast").childNodes.length).toEqual(4)
+
+      expect(document.getElementById("cast").childNodes.length).to.equal(4)
     });
 
     it("creates separate elements for each review ", () => {
-      console.log(document.getElementById("reviews").childNodes)
-      expect(document.getElementById("reviews").childNodes.length).toEqual(3)
+
+      expect(document.getElementById("reviews").childNodes.length).to.equal(3)
     });
 })

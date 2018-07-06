@@ -7,13 +7,19 @@ html {
 }
 
 #moviePage {
-  margin: 5%;
+  margin: 0 5%;
   height: auto;
   background-color: #DDD;
   font-family: serif;
   text-align: center;
 }
 
+nav {
+  margin-top: 5%;
+  height: auto;
+  font-family: serif;
+  text-align: center;
+}
 header {
   font-size: 150%;
   text-shadow: 1px 0px #333;
