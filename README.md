@@ -123,3 +123,5 @@ key/value pair in the data corresponds to an element on the webpage, so you'll
 need to write code that can append all of them.  The steps involved will change
 for different values (i.e. you will need to use loops for the cast and reviews
 data).
+
+*Note:* when manipulating the DOM, use `innerHTML` instead of `innerText`.

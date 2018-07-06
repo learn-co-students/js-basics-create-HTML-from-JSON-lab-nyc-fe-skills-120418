@@ -48,7 +48,7 @@ movies = {
     "genre": "Sci-fi",
     "filmRating": "PG-13",
     "poster":
-      "https://curriculum-content.s3.amazonaws.com/web-development/cruise-ship.jpg",
+      "https://s3.amazonaws.com/ironboard-learn/terminator.jpg",
     "audienceScore": 8.8,
     "description":
       "The terminator is sent from the future to fight another terminator who is also from the future, but is liquid.",
@@ -68,7 +68,7 @@ movies = {
     ],
     "reviews": [
         {
-          "username": "Johnny British",
+          "username": "Jenette Goldstein",
           "content": "best film of the 80s"
         },
         {
@@ -78,6 +78,10 @@ movies = {
         {
           "username": "Ridley Scott",
           "content": "Its okay"
+        },
+        {
+          "username": "Wolfie's fine, honey. Wolfie's just fine. Where are you?",
+          "content": "T-1000"
         }
       ]
   }
