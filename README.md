@@ -2,21 +2,25 @@
 
 ## Problem Statement
 
-Let's say you want to look up a movie on [IMDB](http://www.imdb.com/):
-you enter the title into a search bar, find the movie in the results and open
-up a page that contains content unique to that specific movie. The page
-includes the movie's description, the director, the stars, trailers, etc... its
-all there! Each movie you navigate to has its own content, all displayed in a
-consistent structure.
+Let's say you want to look up a movie on [IMDB](http://www.imdb.com/): you
+enter the title into a search bar, find the movie in the results and open up a
+page that contains content unique to that specific movie. The page includes the
+movie's description, the director, the stars, trailers, etc...it's all there!
+Each movie you navigate to has its own content, all displayed in a consistent
+structure.
 
 There are, however, thousands upon thousands of movies on IMDB. Creating a
-unique HTML page for each movie would be absurd! Aside from how endlessly time
-consuming it would be to create a separate webpage for every movie ever, what
-would happen if you wanted to go back and make an change to the layout?
+unique HTML page for each movie would be absurd! Aside from how endlessly
+time-consuming it would be to create a separate webpage for every movie ever,
+what would happen if you wanted to go back and make an change to the layout?
 
-For this lab, we will be exploring the use of dynamic content, filling in a text
-on a website using JSON data. Your task is to access the provided JSON data and
-use it to populate a webpage using JavaScript and DOM manipulation.
+For this lab, we will be exploring the use of _dynamic content_, creating the
+page by using DOM updates based on data in the JSON format. Many sites publish
+and share their information in JSON, so it's a good format for us to learn
+with. Will cover it in more detail below.
+
+Your task is to access the provided JSON data and use it to populate a webpage
+using JavaScript and DOM manipulation.
 
 ## Objectives
 
@@ -37,7 +41,7 @@ content looks like a set of objects and arrays.  For instance, if you go to a
 recipe website that uses JSON and click on a particular recipe, the data
 received for the recipe would look something like this:
 
-```
+```json
 `{
   "recipeTitle": "Grilled Cheese",
   "description": "Cheese, inside of two pieces of bread, grilled with butter",
@@ -67,10 +71,10 @@ JavaScript is used to request this JSON string based on what you've clicked.
 When it is received, it is converted into a set of nested objects and arrays,
 which JavaScript can then read and use to fill in the content.
 
-Many of the most popular websites around are built using JSON to deliver
-their content. In fact, many of your favorite phone apps are too!
-Understanding how to take data in JSON format and convert it to HTML content is
-a critical skill in modern web development.
+Many of the most popular websites around are built using JSON to deliver their
+content. In fact, many of your favorite phone apps are too!  Understanding how
+to take data in JSON format and convert it to HTML content is a critical skill
+in modern web development.
 
 ## Instructions
 
@@ -105,16 +109,13 @@ look at the console, you should see the data output.
 #### Deliverables
 
 The way you choose to write your code is up to you. Use the provided
-`window.addEventListener` as a starting point. Use test errors as guidance on
+`document.addEventListener` as a starting point. Use test errors as guidance on
 what to do next. Your app should do the following:
 
 * Use the HTML ids to populate content from our JSON data with the appropriate
 HTML elements
-
 * On opening, replace any filler content with all of the data related to 'Titanic'
-
 * Use the provided buttons to switch display content to 'Terminator' data and back
-
 
 #### Suggested Work Flow
 
